@@ -1,4 +1,18 @@
 ---
 layout: default
 ---
-{% include work.html %}
+<article id="work" class="panel">
+	<header>
+		<h2>Work</h2>
+	</header>
+	<p>{{ site.workTagline }}</p>
+	<section>
+		{% for post in site.posts %}
+		<div class="row">
+			<div class="4u 12u$(mobile)">
+				<a href="{{ post.url | prepend: site.baseurl }}" class="image fit"><img src="{{ post.featureImage }}" alt=""></a>
+			</div>
+		</div>
+		{% endfor %}
+	</section>
+</article>

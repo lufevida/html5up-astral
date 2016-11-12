@@ -1,22 +1,29 @@
 ---
 layout: default
 ---
-<!-- Home -->
-{% include home.html %}
-<article id="work" class="panel">
-	<header>
-		<h2>Work</h2>
-	</header>
-	<p>{{ site.workTagline }}</p>
-	<section>
-		{% for post in site.posts %}
-		<div class="row">
-			<div class="4u 12u$(mobile)">
-				<a href="{{ post.url | prepend: site.baseurl }}" class="image fit"><img src="{{ post.featureImage }}" alt=""></a>
+<!-- Nav -->
+{% include navigation.html %}
+<!-- Main -->
+<div id="main">
+	<!-- Home -->
+	{% include home.html %}
+	<article id="work" class="panel">
+		<header>
+			<h2>Work</h2>
+		</header>
+		<p>{{ site.workTagline }}</p>
+		<section>
+			{% for my_page in site.pages %}
+			<div class="row">
+				<div class="4u 12u$(mobile)">
+					<a href="{{ my_page.url | prepend: site.baseurl }}" class="image fit"><img src="{{ my_page.featureImage }}" alt=""></a>
+				</div>
 			</div>
-		</div>
-		{% endfor %}
-	</section>
-</article>
-<!-- Contact -->
-{% include contact.html %}
+			{% endfor %}
+		</section>
+	</article>
+	<!-- Contact -->
+	{% include contact.html %}
+</div>
+<!-- Footer -->
+{% include footer.html %}

@@ -4,10 +4,12 @@
 	</header>
 	<p>{{ site.workTagline }}</p>
 	<section>
+		{% for post in site.posts %}
 		<div class="row">
 			<div class="4u 12u$(mobile)">
-				<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-			</div>						
+				<a href="{{ post.url | prepend: site.baseurl }}" class="image fit"><img src="{{ post.featureImage }}" alt=""></a>
+			</div>
 		</div>
+		{% endfor %}
 	</section>
 </article>

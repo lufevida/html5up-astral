@@ -5,4 +5,13 @@
 	{% if site.twitter %}
 		<a href="https://twitter.com/{{ site.twitter }}" class="icon fa-twitter"><span>Twitter</span></a>
 	{% endif %}
+	{% if site.facebook %}
+		<a href="https://www.facebook.com/{{ site.facebook }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        {% endif %}
+        {% if site.instagram %}
+		<a href="https://www.instagram.com/{{ site.instagram }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        {% endif %}
+        {% if site.github %}
+		<a href="https://github.com/{{ site.github }}" class="icon fa-github"><span class="label">GitHub</span></a></li>
+        {% endif %}
 </nav>

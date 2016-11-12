@@ -11,7 +11,15 @@
 				<!-- Home -->
 				{% include home.html %}
 				<!-- Work -->
-				{{ content }}
+				<article id="work" class="panel">
+					<header>
+						<h2>{{ post.title }}</h2>
+					</header>
+					<p>{{ post.tagline }}</p>
+					<section>
+						{{ content }}
+					</section>
+				</article>
 				<!-- Contact -->
 				{% include contact.html %}
 			</div>
@@ -22,15 +30,3 @@
 		{% include scripts.html %}
 	</body>
 </html>
-
-
-
-<article id="work" class="panel">
-	<header>
-		<h2>{{ post.title }}</h2>
-	</header>
-	<p>{{ post.tagline }}</p>
-	<section>
-		{{ content }}
-	</section>
-</article>

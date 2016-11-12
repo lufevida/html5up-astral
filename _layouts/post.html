@@ -4,21 +4,12 @@
 	{% include head.html %}
 	<body>
 		<!-- Wrapper-->
-		<div id="postsWrapper">
+		<div id="wrapper">
 			<!-- Nav -->
-			{% include postNavigation.html %}
+			{% include navigation.html %}
 			<!-- Main -->
-			<div id="main">
-				<!-- Work -->
-				<article id="posts" class="panel">
-					<header>
-						<h2>{{ post.title }}</h2>
-					</header>
-					<p>{{ post.tagline }}</p>
-					<section>
-						{{ content }}
-					</section>
-				</article>
+			<div id="main">				
+				{{ content }}
 			</div>
 			<!-- Footer -->
 			{% include footer.html %}

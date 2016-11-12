@@ -3,27 +3,14 @@
 <html>
 	{% include head.html %}
 	<body>
-
 		<!-- Wrapper-->
-			<div id="wrapper">
-
-				<!-- Nav -->
-				{% include navigation.html %}
-
+		<div id="wrapper">
+			<!-- Nav -->
+			{% include navigation.html %}
 				<!-- Main -->
-					<div id="main">
-
-						<!-- Me -->
-							<article id="me" class="panel">
-								<header>
-									<h1>Jane Doe</h1>
-									<p>Senior Astral Projectionist</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
+				<div id="main">
+						<!-- Home -->
+						{% include home.html %}
 
 						<!-- Work -->
 							<article id="work" class="panel">

@@ -2,18 +2,19 @@
 layout: default
 ---
 <!-- Nav -->
-			{% include pageNavigation.html %}
-			<!-- Main -->
-			<div id="main">
-				<article id="page" class="panel">
-					<header>
-						<h2>{{ page.title }}</h2>
-					</header>
-					<p>{{ page.tagline }}</p>
-					<section>
-						{{ content }}
-					</section>
-				</article>
-			</div>
-			<!-- Footer -->
-			{% include footer.html %}
+{% include pageNavigation.html %}
+<!-- Main -->
+<div id="main">
+	<article id="page" class="panel">
+		<header>
+			<h2>{{ page.title }}</h2>
+		</header>
+		<p>{{ page.tagline }}</p>
+		<section>
+			Where is my stuff?
+			{{ content }}
+		</section>
+	</article>
+</div>
+<!-- Footer -->
+{% include footer.html %}

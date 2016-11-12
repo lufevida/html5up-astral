@@ -9,10 +9,8 @@
 			{% include postNavigation.html %}
 			<!-- Main -->
 			<div id="main">
-				<!-- Home -->
-				{% include home.html %}
 				<!-- Work -->
-				<article id="work" class="panel">
+				<article id="posts" class="panel">
 					<header>
 						<h2>{{ post.title }}</h2>
 					</header>
@@ -21,8 +19,6 @@
 						{{ content }}
 					</section>
 				</article>
-				<!-- Contact -->
-				{% include contact.html %}
 			</div>
 			<!-- Footer -->
 			{% include footer.html %}

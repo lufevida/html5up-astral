@@ -14,8 +14,9 @@ layout: default
 		<p>{{ site.workTagline }}</p>
 		<section>
 			<div class="row">
+
 				{% for my_page in site.pages %}
-					{% if page.title %}
+					{% if my_page.title %}
 				<div class="4u 12u$(mobile)">
 					<a href="{{ my_page.url | prepend: site.baseurl }}" class="image fit"><img src="{{ my_page.featureImage }}" alt=""></a>
 				</div>

@@ -6,19 +6,17 @@
 		<!-- Wrapper-->
 		<div id="wrapper">
 			<!-- Nav -->
-			{% include navigation.html %}
+			{% include postNavigation.html %}
 			<!-- Main -->
 			<div id="main">
-				<article id="me" class="panel">
+				<article id="post" class="panel">
 					<header>
-						<h1>{{ site.title }}</h1>
-						<p>{{ site.tagline }}</p>
+						<h2>{{ page.title }}</h2>
 					</header>
-					{{ content }}
-					<!-- <a href="#work" class="jumplink pic"> -->
-					<!-- <span class="arrow icon fa-chevron-right"><span>See my work</span></span> -->
-					<!-- <img src="{{ site.photo }}" alt="" /> -->
-					<!-- </a> -->
+					<p>{{ page.tagline }}</p>
+					<section>
+						{{ content }}
+					</section>
 				</article>
 			</div>
 			<!-- Footer -->
